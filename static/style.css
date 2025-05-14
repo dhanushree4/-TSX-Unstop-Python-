@@ -1,0 +1,235 @@
+body {
+  margin: 0;
+  font-family: 'Fira Code', monospace;
+  animation: gradientBG 15s ease infinite;
+  background: linear-gradient(-45deg, #ff9a9e, #fecfef, #fcb69f, #ffdde1);
+  background-size: 400% 400%;
+  color: #333;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* GENERAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fira Code', monospace;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+.navbar {
+  background: linear-gradient(to right, #7411cb, #2575fc);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  font-family: 'Fira Code', monospace;
+  width: 100%;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #c5d8e8 !important;
+}
+
+.nav-link {
+  color: #cbd28d !important;
+  font-weight: 500;
+  margin-right: 15px;
+}
+
+.nav-link:hover {
+  color: #ffe600 !important;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+/* SECTIONS */
+section {
+  margin-bottom: 60px;
+  padding: 40px 0;
+}
+
+/* HEADINGS */
+ h4 {
+  color: #2c3e50;
+  font-weight: 700;
+  text-align: left;
+  position: relative;
+}
+h2 {
+  color: #2c3e50;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #6a11cb;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+/* CARDS */
+.card {
+  border-radius: 15px;
+  border: none;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* ICON STYLING */
+i {
+  font-size: 1.2rem;
+  margin-right: 8px;
+  color: #6a11cb;
+}
+
+/* CERTIFICATIONS LIST */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+  padding-left: 25px;
+  position: relative;
+  font-family: 'Fira Code', monospace;
+}
+
+ul li::before {
+  content: "⭐";
+  position: absolute;
+  left: 0;
+  color: #f39c12;
+}
+
+/* SKILL TAGS */
+.badge {
+  background: linear-gradient(to right, #fc5c7d, #6a82fb);
+  color: white;
+  font-size: 0.95rem;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 30px;
+  display: inline-block;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* FOOTER */
+footer {
+  background: #22384e;
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+/* DARK MODE */
+body.dark-mode {
+  background: #121212;
+  color: #d799c6;
+  font-family: 'Fira Code', monospace;
+}
+
+body.dark-mode .navbar {
+  background: #1f1f1f;
+}
+
+body.dark-mode .card {
+  background: #1e1e1e;
+  color: rgb(220, 170, 170);
+}
+
+body.dark-mode .nav-link {
+  color: #9db4e2 !important;
+}
+
+body.dark-mode footer {
+  background: #1f1f1f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+.dark-mode, .dark-mode h4, .dark-mode p {
+  background-color: #121212;
+  color: #c391c0;
+}
+
+.dark-mode h2 {
+  color: #f0c7c7;
+}
+.dark-mode h1 {
+  color: #f0c7c7;
+}
+.dark-mode h4 {
+  color: #f0c7c7;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+}
+
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #f8f9fa;
+  color: #6c757d;
+}
