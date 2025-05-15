@@ -9,8 +9,7 @@ The Flask backend handles routing for each page, while the frontend ensures a sm
 For deployment, Render was used by linking the GitHub repository and setting the start command to gunicorn app:app. Render automatically detects the open port and deploys the service, making the application accessible online.
 
 ## Project Structure
-'''
-portfolio/
+''' portfolio/
 ├── static/ 
 │ └── style.css # Custom CSS styles
 ├── templates/
@@ -18,8 +17,7 @@ portfolio/
 │ ├── about.html # About me
 │ └── contact.html # Contact page
 ├── app.py # Flask backend
-├── requirements.txt # Project dependencies
-'''
+├── requirements.txt # Project dependencies'''
 ## Technologies Used
 
 - **Frontend**: HTML5, CSS3
